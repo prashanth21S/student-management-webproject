@@ -1,0 +1,13 @@
+version: '3.4'
+
+services:
+  frontend:
+    image: sprasu21/webproject-frontend
+    stdin_open: true
+    ports:
+      - "3000:3000"
+  
+  backend:
+    image: sprasu21/webproject-backend
+    ports:
+      - "5000:5000"
